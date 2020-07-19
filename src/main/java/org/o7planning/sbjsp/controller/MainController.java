@@ -21,7 +21,7 @@ public class MainController {
         persons.add(new Person("Steve", "Jobs"));
     }
 
-    //
+    ///develop
     @RequestMapping(value = { "/", "/index" }, method = RequestMethod.GET)
     public String index(Model model) {
 
@@ -34,6 +34,14 @@ public class MainController {
 
     @RequestMapping(value = { "/personList" }, method = RequestMethod.GET)
     public String viewPersonList(Model model) {
+
+        model.addAttribute("persons", persons);
+
+        return "personList";
+    }
+
+    @RequestMapping(value = { "/personList" }, method = RequestMethod.GET)
+    public String viewPerson(Model model) {
 
         model.addAttribute("persons", persons);
 

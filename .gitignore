@@ -21,3 +21,13 @@ $RECYCLE.BIN/
 # =========================
 # Operating System Files
 # =========================
+src/test/test.iml
+src/main/main.iml
+SpringBootJSP.iml
+.mvn/.mvn.iml
+.idea/workspace.xml
+.idea/vcs.xml
+.idea/modules.xml
+.idea/misc.xml
+.idea/libraries/maven_wrapper2.xml
+.idea/libraries/maven_wrapper.xml

@@ -1,13 +1,13 @@
 package org.o7planning.sbjsp.controller;
 
-import java.util.ArrayList;
-import java.util.List;
-
 import org.o7planning.sbjsp.model.Person;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
+
+import java.util.ArrayList;
+import java.util.List;
 
 /*
  * author: DatLT
@@ -22,7 +22,8 @@ public class MainController {
     }
 
     ///develop
-    @RequestMapping(value = { "/", "/index" }, method = RequestMethod.GET)
+    @RequestMapping(value = { "/", "/index" }, method = Reque
+            stMethod.GET)
     public String index(Model model) {
 
         String message = "Hello Spring Boot + JSP";

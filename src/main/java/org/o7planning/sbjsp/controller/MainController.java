@@ -53,6 +53,7 @@ public class MainController {
     public String viewDevelop(Model model) {// new code
 
         model.addAttribute("persons", persons);
+        model.addAttribute("develop", persons);
 
         return "personList";
     }

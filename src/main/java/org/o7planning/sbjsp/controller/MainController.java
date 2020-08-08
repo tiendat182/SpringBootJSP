@@ -20,8 +20,12 @@ public class MainController {
         persons.add(new Person("Bill", "Gates"));
         persons.add(new Person("Steve", "Jobs"));
         persons.add(new Person("Dat", "Luu"));
+        persons.add(new Person("Phuong", "Luu"));
     }
     public void develop1(){
+
+    }
+    public void develop2(){
 
     }
 }

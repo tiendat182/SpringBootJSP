@@ -51,6 +51,13 @@ public class MainController {
 
     // new comment
     public String viewDevelop(Model model) {// new code
+        model.addAttribute("branchA", persons); // new code for Banch A
+        model.addAttribute("persons", persons);
+
+        return "personList";
+    }
+
+    public String branchA(Model model) {//  Banch A
 
         model.addAttribute("persons", persons);
 

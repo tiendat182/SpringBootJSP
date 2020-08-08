@@ -21,39 +21,4 @@ public class MainController {
         persons.add(new Person("Steve", "Jobs"));
     }
 
-    ///develop
-    @RequestMapping(value = { "/", "/index" }, method = Reque
-            stMethod.GET)
-    public String index(Model model) {
-
-        String message = "Hello Spring Boot + JSP";
-
-        model.addAttribute("message", message);
-
-        return "index";
-    }
-
-    @RequestMapping(value = { "/personList" }, method = RequestMethod.GET)
-    public String viewPersonList(Model model) {
-        model.addAttribute("develop", persons);//for Develop branch
-        model.addAttribute("persons", persons);
-
-        return "personList";
-    }
-
-    @RequestMapping(value = { "/personList" }, method = RequestMethod.GET)
-    public String viewPerson(Model model) {
-        model.addAttribute("persons2", persons);// new code
-        model.addAttribute("persons", persons);
-
-        return "personList";
-    }
-    // Develop
-    // new comment
-    public String viewDevelop(Model model) {// new code
-
-        model.addAttribute("persons", persons);
-
-        return "personList";
-    }
 }

@@ -20,5 +20,7 @@ public class MainController {
         persons.add(new Person("Bill", "Gates"));
         persons.add(new Person("Steve", "Jobs"));
     }
-    public void A(){}
+    public void develop1(){
+
+    }
 }

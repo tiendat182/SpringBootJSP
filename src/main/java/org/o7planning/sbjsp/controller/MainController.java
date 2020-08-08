@@ -43,11 +43,17 @@ public class MainController {
 
     @RequestMapping(value = { "/personList" }, method = RequestMethod.GET)
     public String viewPerson(Model model) {
-
+        model.addAttribute("persons2", persons);// new code
         model.addAttribute("persons", persons);
 
         return "personList";
     }
 
     // new comment
+    public String viewDevelop(Model model) {// new code
+
+        model.addAttribute("persons", persons);
+
+        return "personList";
+    }
 }

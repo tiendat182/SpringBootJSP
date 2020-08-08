@@ -19,6 +19,7 @@ public class MainController {
     static {
         persons.add(new Person("Bill", "Gates"));
         persons.add(new Person("Steve", "Jobs"));
+        persons.add(new Person("Dat", "Luu"));
     }
     public void develop1(){
 

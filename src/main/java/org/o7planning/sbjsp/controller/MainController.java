@@ -35,7 +35,7 @@ public class MainController {
 
     @RequestMapping(value = { "/personList" }, method = RequestMethod.GET)
     public String viewPersonList(Model model) {
-
+        model.addAttribute("develop", persons);//for Develop branch
         model.addAttribute("persons", persons);
 
         return "personList";
@@ -48,7 +48,7 @@ public class MainController {
 
         return "personList";
     }
-
+    // Develop
     // new comment
     public String viewDevelop(Model model) {// new code
 

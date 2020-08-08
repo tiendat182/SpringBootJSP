@@ -15,53 +15,9 @@ import java.util.List;
 @Controller
 public class MainController {
     private static List<Person> persons = new ArrayList<Person>();
-//develop
+
     static {
         persons.add(new Person("Bill", "Gates"));
         persons.add(new Person("Steve", "Jobs"));
-    }
-
-    ///develop
-    @RequestMapping(value = { "/", "/index" }, method = Reque
-            stMethod.GET)
-    public String index(Model model) {
-
-        String message = "Hello Spring Boot + JSP";
-
-        model.addAttribute("message", message);
-
-        return "index";
-    }
-
-    @RequestMapping(value = { "/personList" }, method = RequestMethod.GET)
-    public String viewPersonList(Model model) {
-
-        model.addAttribute("persons", persons);
-
-        return "personList";
-    }
-
-    @RequestMapping(value = { "/personList" }, method = RequestMethod.GET)
-    public String viewPerson(Model model) {
-        model.addAttribute("persons2", persons);// new code
-        model.addAttribute("persons", persons);
-
-        return "personList";
-    }
-
-    // new comment
-    public String viewDevelop(Model model) {// new code
-        model.addAttribute("branchA", persons); // new code for Banch A
-        model.addAttribute("persons", persons);
-
-        return "personList";
-    }
-
-    public String branchA(Model model) {//  Banch A
-
-        model.addAttribute("persons", persons);
-        model.addAttribute("develop", persons);
-
-        return "personList";
     }
 }
